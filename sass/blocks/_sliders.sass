@@ -1,0 +1,85 @@
+.slider
+  width: 100%
+  padding: 60px
+  height: 680px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-sizing: border-box
+  &-week
+    @extend .slider
+    background: #f7f7f7 url("../img/top-week.png") center/cover no-repeat
+    background-blend-mode: multiply
+  &-offers
+    @extend .slider
+    background: #f7f7f7 url("../img/offers.png") center/cover no-repeat
+    background-blend-mode: multiply
+    & .slider--title
+      margin: 0 auto
+  &-int
+    @extend .slider
+    &--nav
+      margin: 37px auto 46px
+      width: 1200px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+    &--link-offers
+      @extend .link-offers
+  &--title
+    margin: 0 auto 67px
+    padding-left: 15px
+    width: 1200px
+    color: #000
+    font-family: Montserrat
+    font-size: 48px
+    font-weight: 700
+    line-height: 55px
+    white-space: nowrap
+    box-sizing: border-box
+.top-week--next,
+.offers--next
+.int--next
+  margin: 0
+  padding: 0
+  width: 49px
+  height: 49px
+  position: absolute
+  top: 142px
+  left: -10px
+  z-index: 10
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #fff
+  border: none
+  border-radius: 4px
+  box-shadow: 0 2px 4px #cccccc
+  & svg
+    margin-right: 2px
+    height: 35%
+    fill: #ff9c00
+.top-week--prev,
+.offers--prev
+.int--prev
+  margin: 0
+  padding: 0
+  width: 49px
+  height: 49px
+  position: absolute
+  top: 142px
+  right: -10px
+  z-index: 10
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #ff9c00
+  border: none
+  border-radius: 4px
+  box-shadow: 0 2px 4px #c6851e
+  & svg
+    margin-left: 2px
+    height: 35%
+    fill: #fff

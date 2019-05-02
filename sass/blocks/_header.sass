@@ -1,0 +1,21 @@
+.header
+  width: 100%
+  height: auto
+  background: #fff
+  &--top
+    @extend .header
+    height: 100px
+  &--nav
+    @extend .header
+    height: 65px
+  &--bottom
+    @extend .header
+    height: 730px
+    background: #000 url(../img/header-bottom.png) 0 -65px no-repeat
+  &--wrapper
+    @extend .wrapper
+    justify-content: space-between
+    
+@import header-top
+@import header-nav
+@import header-bottom

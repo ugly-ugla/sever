@@ -1,0 +1,52 @@
+.catalog
+  width: 100%
+  height: auto
+  &--wrapper
+    @extend .wrapper
+    height: auto
+    justify-content: flex-start
+    &-min
+      @extend .catalog--wrapper
+      width: 600px
+      height: 468px
+      flex-wrap: wrap
+      justify-content: space-around
+      align-items: stretch
+  &--title
+    margin: 75px 0 50px
+    color: #000
+    font-size: 48px
+    font-weight: 700
+    line-height: 55px
+  &--title
+    &-xl
+      margin-left: 35px
+      width: 371px
+      color: #fff
+      font-size: 24px
+      font-weight: 700
+      line-height: 30px
+      white-space: normal
+    &-xs
+      margin-left: 35px
+      width: 200px
+      color: #fff
+      font-size: 16px
+      font-weight: 700
+      line-height: 24px
+      white-space: normal
+  &--price
+    &-xl
+      margin: 0 0 20px 33px
+      width: 107px
+      color: #2b9bfe
+      font-size: 16px
+      font-weight: 600
+      line-height: 30px
+    &-xs
+      margin: 0 0 10px 33px
+      width: 90px
+      color: #2b9bfe
+      font-size: 14px
+      font-weight: 600
+      line-height: 30px
