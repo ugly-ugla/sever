@@ -1,5 +1,6 @@
 .product-pre
-  width: 842px
+  @extend .product
+  width: 839px
   height: 247px
   background: #fff
   border: 1px solid #e8e8e8
@@ -9,4 +10,15 @@
     @extend .product--title
   &--wrapper
     @extend .wrapper
-    max-width: 720px
+    margin-top: 28px
+    width: auto
+    height: auto
+    flex-wrap: nowrap
+  &--activity
+    margin-left: 27px
+    width: 520px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &--btn-bid
+    @extend .btn-bid

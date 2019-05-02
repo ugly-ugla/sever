@@ -10,8 +10,8 @@
   <!-- base -->
   <link rel="stylesheet" href="css/reset.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- owl carousel styles -->
-  <link rel="stylesheet" href="js/owlcarousel/dist/assets/owl.carousel.min.css">
+  <!-- mobile styles -->
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 425px)">
 </head>
 
 <body>
@@ -36,16 +36,25 @@
       <div class="header--wrapper">
         <a href="catalog.html" class="nav--link-catalog">Каталог
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" version="1.1" width="50px" height="50px">
-          <g id="surface1">
-          <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z "/>
-          </g>
+            <g id="surface1">
+              <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z " />
+            </g>
           </svg>
         </a>
-        <a href="" class="nav--link-nav">Порядок работы</a>
-        <a href="" class="nav--link-nav">Что такое торги по банкротству</a>
-        <a href="about.html" class="nav--link-nav">О компании</a>
-        <a href="contacts.html" class="nav--link-nav">Контакты</a>
-        <a href="" class="nav--link-nav">Оплата услуг</a>
+        <a href="" class="nav--link-open">Меню
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" version="1.1" width="50px" height="50px">
+            <g id="surface1">
+              <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z " />
+            </g>
+          </svg>
+        </a>
+        <div class="nav--nav">
+          <a href="" class="nav--link-nav">Порядок работы</a>
+          <a href="" class="nav--link-nav">Что такое торги по банкротству</a>
+          <a href="about.html" class="nav--link-nav">О компании</a>
+          <a href="contacts.html" class="nav--link-nav">Контакты</a>
+          <a href="" class="nav--link-nav">Оплата услуг</a>
+        </div> <!-- @end nav -->
       </div>
     </nav> <!-- end header nav -->
   </header>
@@ -54,13 +63,20 @@
 
   <!-- main sections -->
 
-  <main class="main">
+  <main class="main milk">
 
     <!-- section main content -->
 
     <section class="section">
+      <div class="wrapper" style="justify-content:flex-start;">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li>Вся недвижимость на торгах по банкротству</li>
+        </ul>
+      </div>
       <h3 class="section--title">2-комнатная квартира 64 м² в Москве</h3>
-      <div class="wrapper">
+      <div class="wrapper" style="-ms-align-items:flex-start;align-items:flex-start;">
         <aside class="section--aside">
           <ul class="aside-menu">
             <li>
@@ -97,33 +113,38 @@
             <h3 class="product-pre--title">Торговое помещение 191 м² в Сочи</h3>
             <div class="product-pre--wrapper">
               <img src="img/product-pre1.jpg" alt="">
-              <div class="product--activity">
+              <div-pre class="product-pre--activity">
                 <div class="fav">
                   <svg class="fav--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                    <path
+                      d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                   </svg>
                   <p class="fav--title">Отложить</p>
                 </div> <!-- @end to favorite -->
-                <p class="product-pre--price-old">27 500 000 руб.</p>
-                <p class="product-pre--price">24 900 000 руб.</p>
+                <div>
+                  <p class="product--price-old">27 500 000 руб.</p>
+                  <p class="product--price">24 900 000 руб.</p>
+                </div>
                 <button class="product-pre--btn-bid">Оставить заявку</button>
                 <p class="product-pre--minidesc">2-комнатная квартира 64 м² в Москве по адресу: Мещанский район, Пушкарев переулок, дом 20/17, квартира №23.</p>
-              </div>
             </div>
           </div>
           <div class="product-pre">
             <h3 class="product-pre--title">Отдельно стоящее здание 1044 м² на Кузнецком мосту</h3>
             <div class="product-pre--wrapper">
               <img src="img/product-pre2.jpg" alt="">
-              <div class="product--activity">
+              <div class="product-pre--activity">
                 <div class="fav">
                   <svg class="fav--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                    <path
+                      d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                   </svg>
                   <p class="fav--title">Отложить</p>
                 </div> <!-- @end to favorite -->
-                <p class="product-pre--price-old">27 500 000 руб.</p>
-                <p class="product-pre--price">24 900 000 руб.</p>
+                <div>
+                  <p class="product--price-old">27 500 000 руб.</p>
+                  <p class="product--price">24 900 000 руб.</p>
+                </div>
                 <button class="product-pre--btn-bid">Оставить заявку</button>
                 <p class="product-pre--minidesc">Отдельно стоящее здание 1044 м² на Кузнецком мосту по адресу: ул.Кузнецкий мост д. 17 стр. 2</p>
               </div>
@@ -131,17 +152,20 @@
           </div>
           <div class="product-pre">
             <h3 class="product-pre--title">Здание дилерского центра 2242 м² в Тюмени</h3>
-            <div class="product-pre-wrapper">
+            <div class="product-pre--wrapper">
               <img src="img/product-pre3.jpg" alt="">
-              <div class="product--activity">
+              <div class="product-pre--activity">
                 <div class="fav">
                   <svg class="fav--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                    <path
+                      d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                   </svg>
                   <p class="fav--title">Отложить</p>
                 </div> <!-- @end to favorite -->
-                <p class="product-pre--price-old">27 500 000 руб.</p>
-                <p class="product-pre--price">24 900 000 руб.</p>
+                <div>
+                  <p class="product--price-old">27 500 000 руб.</p>
+                  <p class="product--price">24 900 000 руб.</p>
+                </div>
                 <button class="product-pre--btn-bid">Оставить заявку</button>
                 <p class="product-pre--minidesc">Отдельно стоящее здание 1044 м² на Кузнецком мосту по адресу: ул.Кузнецкий мост д. 17 стр. 2</p>
               </div>
@@ -151,15 +175,18 @@
             <h3 class="product-pre--title">Загородное поместье 6163 м² в Малаховке - Московская область</h3>
             <div class="product-pre--wrapper">
               <img src="img/product-pre4.jpg" alt="">
-              <div class="product--activity">
+              <div class="product-pre--activity">
                 <div class="fav">
                   <svg class="fav--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                    <path
+                      d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                   </svg>
                   <p class="fav--title">Отложить</p>
                 </div> <!-- @end to favorite -->
-                <p class="product-pre--price-old">27 500 000 руб.</p>
-                <p class="product-pre--price">24 900 000 руб.</p>
+                <div>
+                  <p class="product--price-old">27 500 000 руб.</p>
+                  <p class="product--price">24 900 000 руб.</p>
+                </div>
                 <button class="product-pre--btn-bid">Оставить заявку</button>
                 <p class="product-pre--minidesc">Отдельно стоящее здание 1044 м² на Кузнецком мосту по адресу: ул.Кузнецкий мост д. 17 стр. 2</p>
               </div>
@@ -169,15 +196,18 @@
             <h3 class="product-pre--title">Дом 281,2 м² с земельным участком 1200 м² п. Сосенское</h3>
             <div class="product-pre--wrapper">
               <img src="img/product-pre5.jpg" alt="">
-              <div class="product--activity">
+              <div class="product-pre--activity">
                 <div class="fav">
                   <svg class="fav--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                  <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                    <path
+                      d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                   </svg>
                   <p class="fav--title">Отложить</p>
                 </div> <!-- @end to favorite -->
-                <p class="product-pre--price-old">27 500 000 руб.</p>
-                <p class="product-pre--price">24 900 000 руб.</p>
+                <div>
+                  <p class="product--price-old">27 500 000 руб.</p>
+                  <p class="product--price">24 900 000 руб.</p>
+                </div>
                 <button class="product-pre--btn-bid">Оставить заявку</button>
                 <p class="product-pre--minidesc">Отдельно стоящее здание 1044 м² на Кузнецком мосту по адресу: ул.Кузнецкий мост д. 17 стр. 2</p>
               </div>

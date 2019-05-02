@@ -2,8 +2,13 @@
   padding: 35px 40px 45px
   &--wrapper
     @extend .wrapper
-    max-width: 720px
+    max-width: 760px
+    align-items: flex-start
+  &--gallery
+    margin-right: 37px
+    width: 430px
   &--activity
+    width: auto
     display: flex
     flex-direction: column
     justify-content: flex-start
@@ -16,6 +21,7 @@
     white-space: nowrap
     &-old
       @extend .product--price
+      margin-top: 28px
       color: #777777
       font-size: 12px
       font-weight: 400
@@ -53,3 +59,7 @@
     margin-top: 40px
     & img
       margin-top: 34px
+      
+.fotorama-img:nth-child(n+2)
+  width: 99px
+  height: 74px

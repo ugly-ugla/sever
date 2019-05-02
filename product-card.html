@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- owl carousel styles -->
   <link rel="stylesheet" href="js/owlcarousel/dist/assets/owl.carousel.min.css">
+  <!-- fotorama styles -->
+  <link rel="stylesheet" href="js/fotorama/fotorama.css">
+  <!-- mobile styles -->
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 425px)">
 </head>
 
 <body>
@@ -36,16 +40,25 @@
       <div class="header--wrapper">
         <a href="catalog.html" class="nav--link-catalog">Каталог
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" version="1.1" width="50px" height="50px">
-          <g id="surface1">
-          <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z "/>
-          </g>
+            <g id="surface1">
+              <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z " />
+            </g>
           </svg>
         </a>
-        <a href="" class="nav--link-nav">Порядок работы</a>
-        <a href="" class="nav--link-nav">Что такое торги по банкротству</a>
-        <a href="about.html" class="nav--link-nav">О компании</a>
-        <a href="contacts.html" class="nav--link-nav">Контакты</a>
-        <a href="" class="nav--link-nav">Оплата услуг</a>
+        <a href="" class="nav--link-open">Меню
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" version="1.1" width="50px" height="50px">
+            <g id="surface1">
+              <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z " />
+            </g>
+          </svg>
+        </a>
+        <div class="nav--nav">
+          <a href="" class="nav--link-nav">Порядок работы</a>
+          <a href="" class="nav--link-nav">Что такое торги по банкротству</a>
+          <a href="about.html" class="nav--link-nav">О компании</a>
+          <a href="contacts.html" class="nav--link-nav">Контакты</a>
+          <a href="" class="nav--link-nav">Оплата услуг</a>
+        </div> <!-- @end nav -->
       </div>
     </nav> <!-- end header nav -->
   </header>
@@ -59,6 +72,13 @@
     <!-- section main content -->
 
     <section class="section">
+      <div class="wrapper" style="justify-content:flex-start;">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li>Вся недвижимость на торгах по банкротству</li>
+        </ul>
+      </div>
       <h3 class="section--title">2-комнатная квартира 64 м² в Москве</h3>
       <div class="wrapper" style="-ms-align-items:flex-start;align-items:flex-start;">
         <aside class="section--aside">
@@ -94,12 +114,17 @@
         </aside>
         <article class="section--content product">
           <div class="product--wrapper">
-            <div class="product--gallery">
+            <div class="fotorama product--gallery" data-nav="thumbs" data-thumbwidth="99px" data-thumbheight="74px">
+              <img src="img/product1.jpg" alt="">
+              <img src="img/product-min2.jpg" alt="">
+              <img src="img/product-min3.jpg" alt="">
+              <img src="img/product-min4.jpg" alt="">
             </div>
             <div class="product--activity">
               <div class="fav">
                 <svg class="fav--icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                <path d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z"/>
+                  <path
+                    d="M24.85,10.126c2.018-4.783,6.628-8.125,11.99-8.125c7.223,0,12.425,6.179,13.079,13.543 c0,0,0.353,1.828-0.424,5.119c-1.058,4.482-3.545,8.464-6.898,11.503L24.85,48L7.402,32.165c-3.353-3.038-5.84-7.021-6.898-11.503 c-0.777-3.291-0.424-5.119-0.424-5.119C0.734,8.179,5.936,2,13.159,2C18.522,2,22.832,5.343,24.85,10.126z" />
                 </svg>
                 <p class="fav--title">Отложить</p>
               </div> <!-- @end to favorite -->
@@ -112,21 +137,26 @@
           </div> <!-- @end wrapper -->
           <div class="product--description">
             <h3 class="product--title">Описание</h3>
-            <p class="product--desc">Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также используется композиторами при написании музыки.</p>
+            <p class="product--desc">Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же
+              текст-наполнитель. Иногда текст-«рыба» также используется композиторами при написании музыки.</p>
           </div>
           <div class="product--chars">
             <h3 class="product--title">Характеристики</h3>
             <div class="char">
-              <p class="char-left">Регион</p><p class="char-right">Москва</p>
+              <p class="char-left">Регион</p>
+              <p class="char-right">Москва</p>
             </div>
             <div class="char">
-              <p class="char-left">Город</p><p class="char-right">Москва</p>
+              <p class="char-left">Город</p>
+              <p class="char-right">Москва</p>
             </div>
             <div class="char">
-              <p class="char-left">Площадь, м 2</p><p class="char-right">64</p>
+              <p class="char-left">Площадь, м 2</p>
+              <p class="char-right">64</p>
             </div>
             <div class="char">
-              <p class="char-left">Цена руб.м2</p><p class="char-right">99000</p>
+              <p class="char-left">Цена руб.м2</p>
+              <p class="char-right">99000</p>
             </div>
           </div>
           <div class="product--map">
@@ -301,7 +331,7 @@
         <a href="" class="card-v">
           <img src="img/v3.jpg" alt="">
           <div class="card-v--content">
-            <h3 class="card-v--title">Офисы 1857 м2<br >в БЦ на Ленинградском пр-те</h3>
+            <h3 class="card-v--title">Офисы 1857 м2<br>в БЦ на Ленинградском пр-те</h3>
             <p class="card-v--price">₽ 73 634 814</p>
           </div>
         </a>
@@ -396,6 +426,7 @@
 
   <script type="text/javascript" src="js/jquery-3-4-0.min.js"></script>
   <script type="text/javascript" src="js/owlcarousel/dist/owl.carousel.min.js" charset="utf-8"></script>
+  <script src="js/fotorama/fotorama.js" charset="utf-8"></script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -403,12 +434,26 @@
         items: 4,
         loop: true,
         margin: 0,
-        nav:true,
-        navText: [$('.int--next'),$('.int--prev')],
+        nav: true,
+        navText: [$('.int--next'), $('.int--prev')],
         dots: false,
         autoplay: true,
         autoplayTimeout: 3000,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive:{
+          0:{
+            items:1
+        },
+          600:{
+            items:3
+        },
+          1200:{
+            items:4
+        }
+    }
+      });
+      $('.fotorama').fotorama({
+        thumbmargin: 10
       });
     });
   </script>

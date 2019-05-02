@@ -18,16 +18,15 @@
     background-blend-mode: multiply
     & .slider--title
       margin: 0 auto
-  &-int
-    @extend .slider
     &--nav
       margin: 37px auto 46px
+      padding-left: 15px
       width: 1200px
       display: flex
-      justify-content: flex-start
-      align-items: center
     &--link-offers
       @extend .link-offers
+  &-int
+    @extend .slider
   &--title
     margin: 0 auto 67px
     padding-left: 15px
@@ -39,8 +38,9 @@
     line-height: 55px
     white-space: nowrap
     box-sizing: border-box
+
 .top-week--next,
-.offers--next
+.offers--next,
 .int--next
   margin: 0
   padding: 0
@@ -62,7 +62,7 @@
     height: 35%
     fill: #ff9c00
 .top-week--prev,
-.offers--prev
+.offers--prev,
 .int--prev
   margin: 0
   padding: 0
